@@ -37,14 +37,14 @@ const Navbar = () => {
           ${showNav ? 'translate-y-0' : '-translate-y-full'}
         `}
             >
-                <h1
+                <p
                     className={`
             w-30 mt-8 mb-8 mr-14 cursor-pointer font-black kaushan-script-regular
             -rotate-12 text-3xl xl:text-4xl text-gray-700
           `}
                 >
                     Sakuja&nbsp;Shamal
-                </h1>
+                </p>
 
                 {/* Desktop Menu */}
                 <ul className="hidden xl:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3">
