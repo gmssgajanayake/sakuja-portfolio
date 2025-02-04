@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sakuja.me/sitemap.xml
