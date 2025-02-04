@@ -31,7 +31,7 @@ const Navbar = () => {
         <>
             <nav
                 className={`
-          w-full fixed px-5 lg:px-8 xl:px-[8%] py-3 flex items-center justify-between z-50
+          w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50
           xl:shadow-gray-100 xl:shadow-xl
           transition-transform duration-500
           ${showNav ? 'translate-y-0' : '-translate-y-full'}
@@ -49,27 +49,27 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <ul className="hidden xl:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3">
                     <li>
-                        <a href="#about" className="font-Rubik text-2xl transition hover:underline">
+                        <a href="#about" className=" delay-150 duration-2000 ease-in-out font-Rubik text-xl transition  relative inline-block text-slate-800 after:block after:h-[2px] after:w-0 after:bg-slate-800 after:transition-all after:duration-300 hover:after:w-full">
                             About&nbsp;me
                         </a>
                     </li>
                     <li>
-                        <a href="#skills" className="font-Rubik text-2xl transition hover:underline">
+                        <a href="#skills" className="delay-150 duration-2000 ease-in-out font-Rubik text-xl transition  relative inline-block text-slate-800 after:block after:h-[2px] after:w-0 after:bg-slate-800 after:transition-all after:duration-300 hover:after:w-full">
                             Skills
                         </a>
                     </li>
                     <li>
-                        <a href="#projects" className="font-Rubik text-2xl transition hover:underline">
+                        <a href="#projects" className="delay-150 duration-2000 ease-in-out font-Rubik text-xl transition  relative inline-block text-slate-800 after:block after:h-[2px] after:w-0 after:bg-slate-800 after:transition-all after:duration-300 hover:after:w-full">
                             Projects
                         </a>
                     </li>
                     <li>
-                        <a href="#achievements" className="font-Rubik text-2xl transition hover:underline">
+                        <a href="#achievements" className="delay-150 duration-2000 ease-in-out font-Rubik text-xl transition  relative inline-block text-slate-800 after:block after:h-[2px] after:w-0 after:bg-slate-800 after:transition-all after:duration-300 hover:after:w-full">
                             Achievements
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" className="font-Rubik text-2xl transition hover:underline">
+                        <a href="#contact" className="delay-150 duration-2000 ease-in-out font-Rubik text-xl transition  relative inline-block text-slate-800 after:block after:h-[2px] after:w-0 after:bg-slate-800 after:transition-all after:duration-300 hover:after:w-full">
                             Contact
                         </a>
                     </li>
