@@ -18,7 +18,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-    title: 'Sakuja Shamal',
+    title: 'Sakuja Shamal Gajanayake',
     description: 'Portfolio of Sakuja Shamal | BSc in Computer Science, Statistics & Maths student at University of Jaffna. Explore projects, academic work, and achievements.',
     keywords: [
         "Sakuja",
