@@ -5,7 +5,13 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const menuRef = useRef(null);
     const menuButtonRef = useRef(null);
-    const prevScrollPos = useRef(window.pageYOffset);
+    // Initialize with 0 instead of accessing window immediately
+    const prevScrollPos = useRef(0);
+
+    // Set the correct initial value once on the client
+    useEffect(() => {
+        prevScrollPos.current = window.pageYOffset;
+    }, []);
 
     // Handle navbar show/hide based on scroll direction
     useEffect(() => {
@@ -66,7 +72,7 @@ const Navbar = () => {
             <nav
                 className={`
           backdrop-blur-md w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50
-           xl:shadow-xl
+          xl:shadow-xl
           transition-transform duration-500
           ${showNav ? 'translate-y-0' : '-translate-y-full'}
         `}
