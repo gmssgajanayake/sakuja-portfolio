@@ -60,22 +60,22 @@ const Header = () => {
                     </div>
 
 
-                    <div className="bg-white w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">
+                    <div className=" bg-white w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">
                         <Link href={"https://github.com/gmssgajanayake"}
-                           className="p-3 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
-                            <RiGithubFill className={"text-2xl"} />
+                              className="p-3 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
+                            <RiGithubFill className={"text-2xl"}/>
                         </Link>
                         <Link href={"https://www.linkedin.com/in/sakuja-shamal-gajanayake-a15b41347/"}
-                           className="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
-                            <TiSocialLinkedin className={"text-3xl"} />
+                              className="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
+                            <TiSocialLinkedin className={"text-3xl"}/>
                         </Link>
                         <Link href={"https://x.com/sakuja_shamal"}
                               className="p-4 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
-                            <BsTwitterX className={"text-1xl"} />
+                            <BsTwitterX className={"text-1xl"}/>
                         </Link>
                         <Link href={"https://api.whatsapp.com/send/?phone=94717978125"}
                               className="p-3 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
-                            <FaWhatsapp className={"text-2xl"} />
+                            <FaWhatsapp className={"text-2xl"}/>
                         </Link>
                     </div>
                 </div>

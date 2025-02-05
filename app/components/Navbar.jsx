@@ -78,7 +78,7 @@ const Navbar = () => {
         `}
             >
                 {/* Logo */}
-                <p className="w-30 mt-8 mb-8 mr-14 cursor-pointer font-black kaushan-script-regular -rotate-12 text-3xl xl:text-4xl text-gray-700">
+                <p className="w-30 mt-6 mb-10 mr-14 cursor-pointer font-black kaushan-script-regular -rotate-6 text-3xl xl:text-4xl text-gray-700">
                     Sakuja&nbsp;Shamal
                 </p>
 
