@@ -1,9 +1,11 @@
 import sakuja_shamal from './sakujashamal.jpg';
 import uoj_loj from './UoJ_logo.png';
+import ijse_loj  from './ijse.png'
 
 export const assets={
       sakuja_shamal,
-      uoj_loj
+      uoj_loj,
+      ijse_loj
 };
 
 export const workData = [

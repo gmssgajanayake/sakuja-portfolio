@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const SEO = ({ title, description, keywords, pageUrl, ogImage }) => {
+const SEO = ({title, description, keywords, pageUrl, ogImage}) => {
     const baseTitle = "Sakuja Shamal | Computer Science Student & Software Engineer";
     const fullTitle = title ? `${title} | ${baseTitle}` : baseTitle;
     const canonicalUrl = pageUrl ? `https://sakuja.me${pageUrl}` : 'https://sakuja.me';
@@ -10,32 +10,32 @@ const SEO = ({ title, description, keywords, pageUrl, ogImage }) => {
         <Head>
             {/* Primary Meta Tags */}
             <title>{fullTitle}</title>
-            <meta name="title" content={fullTitle} />
-            <meta name="description" content={description} />
-            <meta name="keywords" content={keywords} />
-            <meta name="author" content="Sakuja Shamal Gajanayake" />
+            <meta name="title" content={fullTitle}/>
+            <meta name="description" content={description}/>
+            <meta name="keywords" content={keywords}/>
+            <meta name="author" content="Sakuja Shamal Gajanayake"/>
 
             {/* Open Graph / Facebook */}
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content={canonicalUrl} />
-            <meta property="og:title" content={fullTitle} />
-            <meta property="og:description" content={description} />
-            <meta property="og:image" content={socialImage} />
-            <meta property="og:image:width" content="1200" />
-            <meta property="og:image:height" content="630" />
-            <meta property="og:locale" content="en_LK" />
-            <meta property="og:site_name" content="Sakuja Shamal Portfolio" />
+            <meta property="og:type" content="website"/>
+            <meta property="og:url" content={canonicalUrl}/>
+            <meta property="og:title" content={fullTitle}/>
+            <meta property="og:description" content={description}/>
+            <meta property="og:image" content={socialImage}/>
+            <meta property="og:image:width" content="1200"/>
+            <meta property="og:image:height" content="630"/>
+            <meta property="og:locale" content="en_LK"/>
+            <meta property="og:site_name" content="Sakuja Shamal Portfolio"/>
 
             {/* Twitter */}
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content="@sakuja_shamal" />
-            <meta name="twitter:creator" content="@sakuja_shamal" />
-            <meta name="twitter:title" content={fullTitle} />
-            <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content={socialImage} />
+            <meta name="twitter:card" content="summary_large_image"/>
+            <meta name="twitter:site" content="@sakuja_shamal"/>
+            <meta name="twitter:creator" content="@sakuja_shamal"/>
+            <meta name="twitter:title" content={fullTitle}/>
+            <meta name="twitter:description" content={description}/>
+            <meta name="twitter:image" content={socialImage}/>
 
             {/* Canonical */}
-            <link rel="canonical" href={canonicalUrl} />
+            <link rel="canonical" href={canonicalUrl}/>
         </Head>
     );
 };

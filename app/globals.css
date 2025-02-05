@@ -5,20 +5,20 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: rubik;
+* {
+    font-family: rubik;
 }
 
 
 .kaushan-script-regular {
-  font-family: "Kaushan Script", serif;
-  font-weight: 900;
-  font-style: normal;
+    font-family: "Kaushan Script", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .playfair-display-regular {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }

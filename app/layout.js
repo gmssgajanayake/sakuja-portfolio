@@ -1,20 +1,20 @@
-import { Rubik,Italianno,Roboto } from "next/font/google";
+import {Rubik, Italianno, Roboto} from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
 const rubik = Rubik({
     subsets: ["latin"],
-    weight:["300","400","500"],
+    weight: ["300", "400", "500"],
 });
 
 const italianno = Italianno({
     subsets: ["latin"],
-    weight:["400"],
+    weight: ["400"],
 });
 
 const roboto = Roboto({
     subsets: ["latin"],
-    weight:["400","700"],
+    weight: ["400", "700"],
 });
 
 export const metadata = {
@@ -49,31 +49,31 @@ export const metadata = {
     },
 };
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body
-          className={`${italianno.className} ${rubik.className} ${roboto.className} antialiased scroll-smooth`}
-      >
-      {/* Inject JSON-LD using the Script component */}
-      <Script id="structured-data" type="application/ld+json" strategy="afterInteractive">
-          {JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Sakuja Shamal",
-              url: "https://sakujashamal.com",
-              alumniOf: {
-                  "@type": "CollegeOrUniversity",
-                  name: "University of Jaffna",
-              },
-              knowsAbout: ["Computer Science", "Statistics", "Pure Maths"],
-          })}
-      </Script>
-      <Script src="https://kit.fontawesome.com/f597464952.js" crossOrigin="anonymous"></Script>
+export default function RootLayout({children}) {
+    return (
+        <html lang="en">
+        <body
+            className={`${italianno.className} ${rubik.className} ${roboto.className} antialiased scroll-smooth`}
+        >
+        {/* Inject JSON-LD using the Script component */}
+        <Script id="structured-data" type="application/ld+json" strategy="afterInteractive">
+            {JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Sakuja Shamal",
+                url: "https://sakujashamal.com",
+                alumniOf: {
+                    "@type": "CollegeOrUniversity",
+                    name: "University of Jaffna",
+                },
+                knowsAbout: ["Computer Science", "Statistics", "Pure Maths"],
+            })}
+        </Script>
+        <Script src="https://kit.fontawesome.com/f597464952.js" crossOrigin="anonymous"></Script>
         <div>
             {children}
         </div>
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }
