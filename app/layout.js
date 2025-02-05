@@ -19,7 +19,7 @@ const roboto = Roboto({
 
 export const metadata = {
     title: 'Sakuja Shamal',
-    description: 'Explore the portfolio of Sakuja Shamal, an undergraduate student at the University of Jaffna pursuing a BSc in Computer Science, Statistics, and Pure Maths. Discover projects, academic achievements, and more.',
+    description: 'Portfolio of Sakuja Shamal | BSc in Computer Science, Statistics & Maths student at University of Jaffna. Explore projects, academic work, and achievements.',
     keywords: [
         "Sakuja",
         "Sakuja Shamal",
@@ -43,9 +43,12 @@ export const metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Sakuja Shamal",
+        title: "Sakuja Shamal Gajanayake",
         description:
             "Explore the portfolio of Sakuja Shamal, an undergraduate student at the University of Jaffna.",
+    },
+    alternates: {
+        canonical: "https://sakuja.me",
     },
 };
 
@@ -55,6 +58,23 @@ export default function RootLayout({children}) {
         <body
             className={`${italianno.className} ${rubik.className} ${roboto.className} antialiased scroll-smooth`}
         >
+        {/* Google Analytics Script */}
+        <Script
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID`}
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+            {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GA_MEASUREMENT_ID', {
+            page_path: window.location.pathname,
+          });
+        `}
+        </Script>
+
         {/* Inject JSON-LD using the Script component */}
         <Script id="structured-data" type="application/ld+json" strategy="afterInteractive">
             {JSON.stringify({
