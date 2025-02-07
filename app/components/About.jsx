@@ -13,7 +13,7 @@ const About = () => {
             <div
                 className={"flex w-screen flex-col xl:flex-row  justify-center items-center gap-8 px-8 lg:px-20  xl:px-36"}>
                 <Image
-                    className={" w-[400px] h-[410px] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"}
+                    className={" w-full h-full sm:w-[400px] sm:h-[410px] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"}
                     alt={"Sakuja Shamal"}
                     src={assets.sakuja_shamal_about_me}></Image>
                 <div className={"flex items-center w-full flex-col gap-8  justify-center"}>
@@ -35,7 +35,7 @@ const About = () => {
 
                         </div>
                     </div>
-                    <p className={'px-4 flex justify-center items-center flex-col gap-1 text-sm text-gray-500'}>
+                    <p className={'px-4 flex  justify-center items-center flex-col gap-1 text-sm text-gray-500'}>
                         <span>
                             I completed my primary and secondary education at Bandarawela St. Joseph's College, progressing from Grade 1 through to my Advanced Level examinations in the Physical Science Stream in 2020.
 
@@ -46,17 +46,17 @@ const About = () => {
                         </span>
 
                     </p>
-                    <div className={"flex justify-end gap-4 w-full"}>
-                        <h6 className={"text-5xl playfair-display-700 "}>
-                            imagine. believe.
+                    <div className={"flex items-center justify-end gap-4 w-full"}>
+                        <h6 className={"text-2xl playfair-display-700 md:text-3xl lg:text-4xl xl:text-5xl"}>
+                            imagine.&nbsp;believe.
                         </h6>
-                        <h6 className={"w-30   cursor-pointer font-black kaushan-script-regular -rotate-12 text-6xl "}>
+                        <h6 className={"w-30   cursor-pointer font-black kaushan-script-regular -rotate-12 text-3xl md:text-4xl lg:text-5xl xl:text-6xl "}>
                             achieve.
                         </h6>
 
                     </div>
-                    <div className={"w-full h-20 flex justify-end items-center  "}>
-                        <Link href={`#profile`} className={" w-21 h-21"}>
+                    <div className={"w-full h-10 md:h-20 flex justify-end items-center  "}>
+                        <Link href={`#profile`} className={" w-10 h-10 md:h-20 md:w-20"}>
                             <lottie-player
                                 src="https://lottie.host/cb014360-1044-4484-bfe0-573c16563ce5/vFmmGpPiPg.json"
                                 speed="1" loop=""
