@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(true);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isTop, setIsTop] = useState(true);
     const menuRef = useRef(null);
     const menuButtonRef = useRef(null);
-    // Initialize with 0 instead of accessing window immediately
     const prevScrollPos = useRef(0);
 
     // Set the correct initial value once on the client
@@ -13,19 +14,22 @@ const Navbar = () => {
         prevScrollPos.current = window.pageYOffset;
     }, []);
 
-    // Handle navbar show/hide based on scroll direction
+    // Handle navbar show/hide based on scroll direction and update background color
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset;
 
+            // Set background color: if at the top then white, otherwise use the given color
+            setIsTop(currentScrollPos === 0);
+
+            // Show navbar when scrolling up, hide when scrolling down
             if (currentScrollPos < prevScrollPos.current) {
-                // Scrolling up – show the navbar
                 setShowNav(true);
             } else if (currentScrollPos > prevScrollPos.current) {
-                // Scrolling down – hide the navbar
                 setShowNav(false);
             }
-            // Update the previous scroll position
+
+            // Update previous scroll position
             prevScrollPos.current = currentScrollPos;
         };
 
@@ -33,12 +37,12 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Handle body scroll when menu is open
+    // Prevent body scroll when mobile menu is open
     useEffect(() => {
         document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
     }, [isMenuOpen]);
 
-    // Close menu on click outside or Escape key press
+    // Close mobile menu on click outside or Escape key press
     useEffect(() => {
         const handleClickOutside = (e) => {
             if (
@@ -70,30 +74,30 @@ const Navbar = () => {
     return (
         <>
             <nav
-                className={`
-          backdrop-blur-md w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50
-          xl:shadow-xl
-          transition-transform duration-500
+                className={` 
+           bg-white backdrop-blur-md w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50
+          xl:shadow-xl transition-transform duration-500
           ${showNav ? 'translate-y-0' : '-translate-y-full'}
+          ${isTop ? 'bg-white' : 'bg-white/10 '}
         `}
             >
                 {/* Logo */}
-                <p className="w-30 mt-6 mb-10 mr-14 cursor-pointer font-black kaushan-script-regular -rotate-6 text-3xl xl:text-4xl text-gray-700">
+                <Link href={`#profile`} className="w-30 mt-6 mb-10 mr-14 cursor-pointer font-black kaushan-script-regular -rotate-6 text-3xl xl:text-4xl text-gray-700">
                     Sakuja&nbsp;Shamal
-                </p>
+                </Link>
 
                 {/* Desktop Menu */}
                 <ul className="hidden xl:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3">
                     {['about', 'skills', 'projects', 'achievements', 'contact'].map((item) => (
                         <li key={item}>
-                            <a
+                            <Link
                                 href={`#${item}`}
                                 className="font-Rubik text-xl relative inline-block text-slate-800
                   after:block after:h-[2px] after:w-0 after:bg-slate-800
                   after:transition-all after:duration-300 hover:after:w-full"
                             >
                                 {item.charAt(0).toUpperCase() + item.slice(1)}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -151,13 +155,13 @@ const Navbar = () => {
                     <ul className="flex flex-col gap-6 px-6">
                         {['about', 'skills', 'projects', 'achievements', 'contact'].map((item) => (
                             <li key={item}>
-                                <a
+                                <Link
                                     href={`#${item}`}
                                     className="font-Rubik text-2xl hover:underline"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {item.charAt(0).toUpperCase() + item.slice(1)}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>

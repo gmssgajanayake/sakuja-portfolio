@@ -11,12 +11,12 @@ import {assets} from "@/assets/assets";
 
 const Header = () => {
     return (
-        <div className={"h-screen pt-40 xl:flex-row flex flex-col justify-center items-center"}>
+        <div id={"profile"} className={"xl:h-screen xl:pt-40 xl:flex-row flex flex-col justify-center items-center"}>
             {/*  Image section*/}
             <div
                 className={" flex justify-center xl:justify-end items-center xl:w-3/4 w-screen xl:h-screen xl:pt-10 pt-36"}>
-                <Image src={assets.sakuja_shamal} alt={"Sakuja Shamal"}
-                       className={"rounded-full w-[240px] h-[240px]  xl:w-[360px] xl:h-[360px] p-2 hover:border-dashed hover:border-2 border-slate-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  "}/>
+                <Image src={assets.sakuja_shamal} alt={"Sakuja Shamal Gajanayake"}
+                       className={"  rounded-full w-[240px] h-[240px]  xl:w-[360px] xl:h-[360px] p-2 hover:border-dashed hover:border-2 border-slate-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  "}/>
             </div>
             {/* Description*/}
             <div className={" flex xl:justify-start justify-center items-center w-screen xl:h-screen  py-10 px-4"}>

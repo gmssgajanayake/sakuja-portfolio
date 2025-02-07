@@ -54,10 +54,11 @@ export const metadata = {
 
 export default function RootLayout({children}) {
     return (
-        <html lang="en">
+        <html lang="en" className={"scroll-smooth"}>
         <body
-            className={`${italianno.className} ${rubik.className} ${roboto.className} antialiased scroll-smooth`}
+            className={`${italianno.className} ${rubik.className} ${roboto.className} antialiased `}
         >
+        <Script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></Script>
         {/* Google Analytics Script */}
         <Script
             strategy="afterInteractive"
@@ -81,7 +82,7 @@ export default function RootLayout({children}) {
                 "@context": "https://schema.org",
                 "@type": "Person",
                 name: "Sakuja Shamal",
-                url: "https://sakujashamal.com",
+                url: "https://sakuja.me",
                 alumniOf: {
                     "@type": "CollegeOrUniversity",
                     name: "University of Jaffna",
