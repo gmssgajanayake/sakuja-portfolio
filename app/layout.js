@@ -50,6 +50,13 @@ export const metadata = {
     alternates: {
         canonical: "https://sakuja.me",
     },
+    additionalMetaTags: [
+        {
+            httpEquiv: 'Content-Security-Policy',
+            content:
+                "script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://unpkg.com"
+        }
+    ]
 };
 
 export default function RootLayout({children}) {
