@@ -16,7 +16,8 @@ const nextConfig = {
     // Domain configuration
     env: {
         NEXT_PUBLIC_SITE_URL: 'https://sakuja.me',
-    }
+    },
+
 };
 
 
