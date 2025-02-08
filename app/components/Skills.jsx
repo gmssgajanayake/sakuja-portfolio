@@ -4,6 +4,61 @@ import { assets, items } from "@/assets/assets";
 import { FiGithub } from "react-icons/fi";
 import Link from "next/link";
 
+
+const CountDown = ({ start, end, duration }) => {
+    const [current, setCurrent] = useState(start);
+
+    useEffect(() => {
+        // Determine the direction of the count:
+        // Use 1 for counting up, -1 for counting down.
+        const direction = start < end ? 1 : -1;
+        const totalSteps = Math.abs(end - start);
+        if (totalSteps === 0) return; // Nothing to animate
+
+        // Calculate the interval time based on total steps
+        const intervalTime = duration / totalSteps;
+
+        const interval = setInterval(() => {
+            setCurrent(prev => {
+                // Check if we've reached or passed the target value
+                if ((direction > 0 && prev >= end) || (direction < 0 && prev <= end)) {
+                    clearInterval(interval);
+                    return end;
+                }
+                return prev + direction;
+            });
+        }, intervalTime);
+
+        // Cleanup the interval if the component unmounts or props change
+        return () => clearInterval(interval);
+    }, [start, end, duration]);
+
+    return <span>{current}</span>;
+};
+
+
+
+const Stats = () => {
+    return (
+        <div style={styles.statsContainer}>
+            <div style={styles.statBox}>
+                <h2 style={styles.number}>
+                    <CountDown start={0} end={20} duration={4000} />
+
+                </h2>
+                <p style={styles.label}>Seconds Left</p>
+            </div>
+            <div style={styles.statBox}>
+                <h2 style={styles.number}>
+                    <CountDown start={50} end={0} duration={2000} />
+                </h2>
+                <p style={styles.label}>Items Remaining</p>
+            </div>
+        </div>
+    );
+};
+
+
 const Skills = () => {
     // Available filters.
     const filters = ["Languages", "Web Development", "DevOps"];
@@ -118,7 +173,7 @@ const Skills = () => {
                 {/* Filter Buttons */}
                 <div className="flex gap-4">
                     {filters.map((filter, idx) => (
-                        <button data-aos="fade-right"
+                        <button
                             key={`filters-${idx}`}
                             onClick={() => handleFilterButtonClick(filter)}
                             className={`bg-gray-100 border-[1px] font-normal text-[12px] px-4 py-1 rounded-full border-gray-700 ${
@@ -158,11 +213,12 @@ const Skills = () => {
 
             <div className="flex items-start justify-center gap-14">
                 <div data-aos="fade-right" className="flex flex-col text-gray-800 items-center justify-center gap-1">
-                    <p className="font-bold text-4xl">20+</p>
+                    <p className="font-bold text-4xl">
+                        <CountDown start={0} end={20} duration={5000} />+</p>
                     <p>Projects</p>
                 </div>
                 <div data-aos="fade-left" className="flex flex-col items-center justify-center gap-1">
-                    <p className="font-bold text-gray-800 text-4xl">500+</p>
+                    <p className="font-bold text-gray-800 text-4xl"><CountDown start={0} end={500} duration={5000} />+</p>
                     <p className="text-center">
                         Git Contributions <br />
                         in Last Year
