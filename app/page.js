@@ -4,6 +4,7 @@ import Navbar from "@/app/components/Navbar";
 import Header from "@/app/components/Header";
 import About from "@/app/components/About";
 import Skills from "@/app/components/Skills";
+import Contact from "@/app/components/Contact";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
             <Header/>
             <About/>
             <Skills/>
+            <Contact/>
         </>
     );
 }

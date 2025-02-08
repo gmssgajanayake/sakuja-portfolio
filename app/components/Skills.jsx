@@ -179,7 +179,7 @@ const Skills = () => {
             </div>
             <div className="w-full px-8 lg:px-20 xl:px-36">
                 <div className="w-full h-10 md:h-20 flex justify-end items-center">
-                    <Link href="#profile" className="w-10 h-10 md:h-14 md:w-14 lg:h-20 lg:w-20">
+                    <Link href="#contact" className="w-10 h-10 md:h-14 md:w-14 lg:h-20 lg:w-24 xl:mb-20">
                         <lottie-player
                             src="https://lottie.host/cb014360-1044-4484-bfe0-573c16563ce5/vFmmGpPiPg.json"
                             speed="1"
