@@ -73,6 +73,7 @@ const Header = () => {
                               className="p-4 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
                             <BsTwitterX className={"text-1xl"}/>
                         </Link>
+
                         <Link href={"https://api.whatsapp.com/send/?phone=94717978125"}
                               className="p-3 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
                             <FaWhatsapp className={"text-2xl"}/>

@@ -34,6 +34,7 @@ const SEO = ({title, description, keywords, pageUrl, ogImage}) => {
             <meta name="twitter:description" content={description}/>
             <meta name="twitter:image" content={socialImage}/>
 
+
             {/* Canonical */}
             <link rel="canonical" href={canonicalUrl}/>
         </Head>

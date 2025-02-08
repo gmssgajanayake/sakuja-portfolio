@@ -191,6 +191,7 @@ const Skills = () => {
                     </Link>
                 </div>
             </div>
+
         </div>
     );
 };

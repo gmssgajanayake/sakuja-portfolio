@@ -102,6 +102,7 @@ const Navbar = () => {
                     ))}
                 </ul>
 
+
                 {/* Mobile Menu Button */}
                 <button
                     ref={menuButtonRef}

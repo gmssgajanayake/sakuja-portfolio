@@ -6,6 +6,7 @@ import Link from "next/link";
 
 const About = () => {
     return (
+
         <div id={"about"} className={"xl:h-screen xl:gap-8 py-10 flex flex-col items-center "}>
             <div className={"flex justify-center items-center flex-col"}>
                 <p className={"text-lg  font-medium text-gray-500"}>Get to Know More</p>
