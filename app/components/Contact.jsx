@@ -1,20 +1,20 @@
 import React from "react";
 import Link from "next/link";
-import { MdOutlineEmail } from "react-icons/md";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
+import {MdOutlineEmail} from "react-icons/md";
+import {FaLinkedinIn} from "react-icons/fa6";
+import {FaWhatsapp} from "react-icons/fa6";
+import {FaInstagram} from "react-icons/fa6";
 
 const Contact = () => {
     return (
         <div id={"contact"} className={" xl:h-screen  xl:gap-8 xl:pt-10 flex flex-col items-center justify-between "}>
             <div className={"flex justify-center  items-center h-1/2 flex-col"}>
-                <p className={"text-lg  font-medium text-gray-500"}>Get in Touch</p>
-                <h2 className={"text-4xl p-2 font-extrabold"}>Contact Me</h2>
-                <ul className="xl:border-[1px] rounded-full border-gray-800 mt-10  flex-col md:flex-row flex items-start justify-start md:justify-center md:items-center gap-6 lg:gap-8  px-5 py-5">
+                <p data-aos="zoom-in" className={"text-lg  font-medium text-gray-500"}>Get in Touch</p>
+                <h2 data-aos="zoom-in" className={"text-4xl p-2 font-extrabold"}>Contact Me</h2>
+                <ul data-aos="zoom-in" className="xl:border-[1px] rounded-full border-gray-800 mt-10  flex-col md:flex-row flex items-start justify-start md:justify-center md:items-center gap-6 lg:gap-8  px-5 py-5">
                     <li>
-                        <div className={"flex items-center justify-center gap-2"}>
-                            <div className={"w-10 h-10 flex justify-center items-center bg-gray-800 rounded-full"}>
+                        <div  className={"flex items-center justify-center gap-2"}>
+                            <div  className={"w-10 h-10 flex justify-center items-center bg-gray-800 rounded-full"}>
                                 <MdOutlineEmail color={"white"} size={20}/>
                             </div>
                             <Link
@@ -81,10 +81,8 @@ const Contact = () => {
             <div className={" w-screen"}>
 
             </div>
-            <button className="btn">
-                <Link href={`#profile`} className={"tracking-wide hidden xl:block"}>GO TO TOP</Link>
-            </button>
-            <ul className="hidden xl:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3">
+            <Link data-aos="zoom-in" href={`#profile`} className={"border-[1px] py-2 px-4 rounded-full transition-all duration-500 border-gray-800 hover:bg-gray-800 hover:text-white tracking-wide hidden xl:block"}>GO TO TOP</Link>
+            <ul data-aos="zoom-in" className="hidden xl:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3">
                 {['about', 'skills', 'projects', 'achievements', 'contact'].map((item) => (
                     <li key={item}>
                         <Link

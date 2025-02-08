@@ -108,8 +108,8 @@ const Skills = () => {
     };
 
     return (
-        <div id="skills" className="w-screen xl:h-screen gap-4 xl:gap-8 py-10 flex flex-col items-center">
-            <div className="flex flex-col justify-center items-center">
+        <div id="skills" className="w-screen  gap-4 xl:gap-8 py-10 flex flex-col items-center">
+            <div data-aos="zoom-in"  className="flex flex-col justify-center items-center">
                 <p className="text-lg font-medium text-gray-500">Explore My</p>
                 <h2 className="text-4xl p-2 font-extrabold">Tech Skills</h2>
             </div>
@@ -118,7 +118,7 @@ const Skills = () => {
                 {/* Filter Buttons */}
                 <div className="flex gap-4">
                     {filters.map((filter, idx) => (
-                        <button
+                        <button data-aos="fade-right"
                             key={`filters-${idx}`}
                             onClick={() => handleFilterButtonClick(filter)}
                             className={`bg-gray-100 border-[1px] font-normal text-[12px] px-4 py-1 rounded-full border-gray-700 ${
@@ -133,7 +133,7 @@ const Skills = () => {
                 {/* Triangular Grid of Items */}
                 <div className="flex flex-col gap-4 p-4">
                     {groupedItems.map((rowItems, rowIndex) => (
-                        <div key={`row-${rowIndex}`} className="flex justify-center gap-4">
+                        <div data-aos="zoom-out-up" key={`row-${rowIndex}`} className="flex justify-center gap-4">
                             {rowItems.map((item, idx) => (
                                 <div key={`item-${idx}`} className="w-24 h-28 gap-2 flex flex-col justify-center items-center">
                                     <div
@@ -157,11 +157,11 @@ const Skills = () => {
             </div>
 
             <div className="flex items-start justify-center gap-14">
-                <div className="flex flex-col text-gray-800 items-center justify-center gap-1">
+                <div data-aos="fade-right" className="flex flex-col text-gray-800 items-center justify-center gap-1">
                     <p className="font-bold text-4xl">20+</p>
                     <p>Projects</p>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-1">
+                <div data-aos="fade-left" className="flex flex-col items-center justify-center gap-1">
                     <p className="font-bold text-gray-800 text-4xl">500+</p>
                     <p className="text-center">
                         Git Contributions <br />
@@ -169,7 +169,7 @@ const Skills = () => {
                     </p>
                 </div>
             </div>
-            <div>
+            <div data-aos="flip-left">
                 <Link
                     className="transition-all duration-300 flex justify-center items-center gap-2 py-2 px-4 border-[1px] border-gray-800 rounded-full hover:bg-gray-200"
                     href="https://github.com/gmssgajanayake"

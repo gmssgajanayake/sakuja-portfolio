@@ -1,6 +1,7 @@
 import {Rubik, Italianno, Roboto} from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import "aos/dist/aos.css";
 
 const rubik = Rubik({
     subsets: ["latin"],
