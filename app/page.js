@@ -3,6 +3,8 @@ import SEO from "@/app/components/SEO";
 import Navbar from "@/app/components/Navbar";
 import Header from "@/app/components/Header";
 import About from "@/app/components/About";
+import Skills from "@/app/components/Skills";
+
 
 export default function Home() {
     return (
@@ -14,6 +16,7 @@ export default function Home() {
             <Navbar/>
             <Header/>
             <About/>
+            <Skills/>
         </>
     );
 }

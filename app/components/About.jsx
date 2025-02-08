@@ -3,9 +3,10 @@ import {assets} from "@/assets/assets";
 import Image from "next/image";
 import Link from "next/link";
 
+
 const About = () => {
     return (
-        <div id={"about"} className={"h-screen xl:gap-8 py-10 flex flex-col items-center "}>
+        <div id={"about"} className={"xl:h-screen xl:gap-8 py-10 flex flex-col items-center "}>
             <div className={"flex justify-center items-center flex-col"}>
                 <p className={"text-lg  font-medium text-gray-500"}>Get to Know More</p>
                 <h2 className={"text-4xl p-2 font-extrabold"}>About Me</h2>
@@ -13,13 +14,13 @@ const About = () => {
             <div
                 className={"flex w-screen flex-col xl:flex-row  justify-center items-center gap-8 px-8 lg:px-20  xl:px-36"}>
                 <Image
-                    className={" w-full h-full sm:w-[400px] sm:h-[410px] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"}
+                    className={" w-full h-full mt-3 sm:w-[350px] sm:h-[360px] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"}
                     alt={"Sakuja Shamal"}
                     src={assets.sakuja_shamal_about_me}></Image>
                 <div className={"flex items-center w-full flex-col gap-8  justify-center"}>
                     <div className={"flex items-center w-full flex-col lg:flex-row justify-center gap-8 "}>
                         <div
-                            className={"w-full h-[180px]  flex items-center justify-center rounded-3xl border-[0.5px] border-solid border-gray-400"}>
+                            className={"w-full h-[180px] relative  flex items-center justify-center rounded-3xl border-[0.5px] border-solid border-gray-400"}>
 
                             <lottie-player
                                 src="https://lottie.host/de65d944-d5d0-4faa-8c1f-86df3c188679/vyUfMtVwOF.json"
@@ -35,34 +36,36 @@ const About = () => {
 
                         </div>
                     </div>
-                    <p className={'px-4 flex  justify-center items-center flex-col gap-1 text-sm text-gray-500'}>
-                        <span>
+                    <p className={'px-4 flex  justify-center items-center flex-col gap-1 text-sm text-gray-900'}>
+                        <span className={'text-sm font-normal text-gray-500'}>
                             I completed my primary and secondary education at Bandarawela St. Joseph's College, progressing from Grade 1 through to my Advanced Level examinations in the Physical Science Stream in 2020.
 
                         </span>
-                        <span>
-                             Building on these results, I secured admission to the University of Jaffna, where I am currently pursuing a Bachelor of Science degree with majors in Computer Science (3 years) and Statistics (3 years), along with Pure Mathematics (2 years) and Electronics (1 year) as supplementary subjects. Driven by a keen interest in the theoretical and practical applications of my disciplines,
-                            I am dedicated to strengthening my expertise in software development, data analysis, and mathematical modeling.
+                        <span className={'text-sm font-normal text-gray-500'}>
+                             Building on these results, I secured admission to the University of Jaffna, Sri Lanka, where I am currently pursuing a Bachelor of Science degree with majors in Computer Science and Statistics, along with Pure Mathematics and Electronics  as supplementary subjects.
+
                         </span>
 
                     </p>
-                    <div className={"flex items-center justify-end gap-4 w-full"}>
-                        <h6 className={"text-2xl playfair-display-700 md:text-3xl lg:text-4xl xl:text-5xl"}>
-                            imagine.&nbsp;believe.
-                        </h6>
-                        <h6 className={"w-30   cursor-pointer font-black kaushan-script-regular -rotate-12 text-3xl md:text-4xl lg:text-5xl xl:text-6xl "}>
-                            achieve.
-                        </h6>
+                    <div className={" w-full "}>
+                        <div className={"flex  items-center justify-end gap-4 mr-4 "}>
+                            <h6 className={"text-xl  playfair-display-700 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl "}>
+                                imagine.&nbsp;believe.
+                            </h6>
+                            <h6 className={"w-30   cursor-pointer font-black kaushan-script-regular -rotate-12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl "}>
+                                achieve.
+                            </h6>
+                        </div>
+                        <div className={"w-full h-10 md:h-20 flex justify-end items-center  "}>
+                            <Link href={`#profile`} className={" w-10 h-10 md:h-14 md:w-14 lg:h-20 lg:w-20"}>
+                                <lottie-player
+                                    src="https://lottie.host/cb014360-1044-4484-bfe0-573c16563ce5/vFmmGpPiPg.json"
+                                    speed="1" loop=""
+                                    autoplay="" className="arrow"
+                                    onclick="location.href='./#skills'"></lottie-player>
+                            </Link>
+                        </div>
 
-                    </div>
-                    <div className={"w-full h-10 md:h-20 flex justify-end items-center  "}>
-                        <Link href={`#profile`} className={" w-10 h-10 md:h-20 md:w-20"}>
-                            <lottie-player
-                                src="https://lottie.host/cb014360-1044-4484-bfe0-573c16563ce5/vFmmGpPiPg.json"
-                                speed="1" loop=""
-                                autoplay="" className="arrow"
-                                onclick="location.href='./#skills'"></lottie-player>
-                        </Link>
                     </div>
 
 

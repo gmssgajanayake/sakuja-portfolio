@@ -11,7 +11,7 @@ import {assets} from "@/assets/assets";
 
 const Header = () => {
     return (
-        <div id={"profile"} className={"xl:h-screen xl:pt-40 xl:flex-row flex flex-col justify-center items-center"}>
+        <div id={"profile"} className={" xl:h-screen xl:pt-40 xl:flex-row flex flex-col justify-center items-center"}>
             {/*  Image section*/}
             <div
                 className={" flex justify-center xl:justify-end items-center xl:w-3/4 w-screen xl:h-screen xl:pt-10 pt-36"}>
