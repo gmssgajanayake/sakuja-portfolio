@@ -63,6 +63,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en" className={"scroll-smooth"}>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
         <body
             className={`${italianno.className} ${rubik.className} ${roboto.className} antialiased `}
         >
