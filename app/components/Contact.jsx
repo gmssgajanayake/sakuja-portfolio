@@ -4,6 +4,7 @@ import {MdOutlineEmail} from "react-icons/md";
 import {FaLinkedinIn} from "react-icons/fa6";
 import {FaWhatsapp} from "react-icons/fa6";
 import {FaInstagram} from "react-icons/fa6";
+import { AiOutlineYoutube } from "react-icons/ai";
 
 const Contact = () => {
     return (
@@ -72,6 +73,21 @@ const Contact = () => {
                   after:transition-all after:duration-300 hover:after:w-full"
                             >
                                 Instagram
+                            </Link>
+                        </div>
+                    </li>
+                    <li>
+                        <div className={"flex items-center justify-center gap-2"}>
+                            <div className={"w-10 h-10 flex justify-center items-center bg-gray-800 rounded-full"}>
+                                <AiOutlineYoutube color={"white"} size={22}/>
+                            </div>
+                            <Link
+                                href={"https://www.youtube.com/@sakujashamal"}
+                                className="font-Rubik text-xl relative inline-block text-slate-800
+                  after:block after:h-[2px] after:w-0 after:bg-slate-800
+                  after:transition-all after:duration-300 hover:after:w-full"
+                            >
+                                YouTube
                             </Link>
                         </div>
                     </li>
