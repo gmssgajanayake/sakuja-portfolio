@@ -20,7 +20,7 @@ const Contact = () => {
                             </div>
                             <Link
                                 href={"mailto:contact@sakuja.me"}
-                                className="font-Rubik text-xl relative inline-block text-slate-800
+                                className="font-Rubik text-lg relative inline-block text-slate-800
                   after:block after:h-[2px] after:w-0 after:bg-slate-800
                   after:transition-all after:duration-300 hover:after:w-full"
                             >
@@ -36,7 +36,7 @@ const Contact = () => {
                             </div>
                             <Link
                                 href={"https://www.linkedin.com/in/sakuja-shamal-gajanayake-a15b41347/"}
-                                className="font-Rubik text-xl relative inline-block text-slate-800
+                                className="font-Rubik text-lg relative inline-block text-slate-800
                   after:block after:h-[2px] after:w-0 after:bg-slate-800
                   after:transition-all after:duration-300 hover:after:w-full"
                             >
@@ -46,12 +46,12 @@ const Contact = () => {
                     </li>
                     <li>
                         <div className={"flex items-center justify-center gap-2"}>
-                            <div className={"w-10 h-10 flex justify-center items-center bg-gray-800 rounded-full"}>
+                            <div className={"w-10   h-10 flex justify-center items-center bg-gray-800 rounded-full"}>
                                 <FaWhatsapp color={"white"} size={20}/>
                             </div>
                             <Link
                                 href={"https://api.whatsapp.com/send/?phone=94717978125"}
-                                className="font-Rubik text-xl relative inline-block text-slate-800
+                                className="font-Rubik text-lg relative inline-block text-slate-800
                   after:block after:h-[2px] after:w-0 after:bg-slate-800
                   after:transition-all after:duration-300 hover:after:w-full"
                             >
@@ -68,7 +68,7 @@ const Contact = () => {
                             </div>
                             <Link
                                 href={"https://www.instagram.com/sakujashamal/"}
-                                className="font-Rubik text-xl relative inline-block text-slate-800
+                                className="font-Rubik text-lg relative inline-block text-slate-800
                   after:block after:h-[2px] after:w-0 after:bg-slate-800
                   after:transition-all after:duration-300 hover:after:w-full"
                             >
@@ -83,7 +83,7 @@ const Contact = () => {
                             </div>
                             <Link
                                 href={"https://www.youtube.com/@sakujashamal"}
-                                className="font-Rubik text-xl relative inline-block text-slate-800
+                                className="font-Rubik text-lg relative inline-block text-slate-800
                   after:block after:h-[2px] after:w-0 after:bg-slate-800
                   after:transition-all after:duration-300 hover:after:w-full"
                             >
@@ -103,7 +103,7 @@ const Contact = () => {
                     <li key={item}>
                         <Link
                             href={`#${item}`}
-                            className="font-Rubik text-xl relative inline-block text-slate-800
+                            className="font-Rubik text-lg relative inline-block text-slate-800
                   after:block after:h-[2px] after:w-0 after:bg-slate-800
                   after:transition-all after:duration-300 hover:after:w-full"
                         >
