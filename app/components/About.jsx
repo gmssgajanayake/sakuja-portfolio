@@ -4,6 +4,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { assets } from "@/assets/assets";
 
+
 const About = () => {
     useEffect(() => {
         // Ensure we're on the client and the library has loaded.
