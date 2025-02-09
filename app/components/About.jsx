@@ -26,6 +26,7 @@ const About = () => {
         <>
             {/* Load lottie-interactivity from a CDN */}
             <Script
+
                 src="https://unpkg.com/lottie-interactivity@latest/dist/lottie-interactivity.min.js"
                 strategy="afterInteractive"
             />
