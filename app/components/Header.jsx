@@ -49,7 +49,7 @@ const Header = () => {
                     <p data-aos="zoom-in-left" className="text-center font-Rubik font-medium text-gray-600 text-xl">
                         Hello I'm
                     </p>
-                    <h1 data-aos="zoom-in-left" className="text-center text-kaushan-script-regular text-4xl md:text-5xl kaushan-script-regular text-gray-800">
+                    <h1 data-aos="zoom-in-left" className="text-center  w-80 md:w-96 text-kaushan-script-regular text-4xl md:text-5xl kaushan-script-regular text-gray-800">
                         Sakuja Shamal
                     </h1>
                     <div className="flex flex-col items-center justify-center">
