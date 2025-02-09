@@ -9,8 +9,8 @@ const Contact = () => {
     return (
         <div id={"contact"} className={" xl:h-screen  xl:gap-8 xl:pt-10 flex flex-col items-center justify-between "}>
             <div className={"flex justify-center  items-center h-1/2 flex-col"}>
-                <p data-aos="zoom-in" className={"text-lg  font-medium text-gray-500"}>Get in Touch</p>
-                <h2 data-aos="zoom-in" className={"text-4xl p-2 font-extrabold"}>Contact Me</h2>
+                <p data-aos="fade-right" className={"text-lg  font-medium text-gray-500"}>Get in Touch</p>
+                <h2 data-aos="fade-left" className={"text-4xl p-2 font-extrabold"}>Contact Me</h2>
                 <ul data-aos="zoom-in" className="xl:border-[1px] rounded-full border-gray-800 mt-10  flex-col md:flex-row flex items-start justify-start md:justify-center md:items-center gap-6 lg:gap-8  px-5 py-5">
                     <li>
                         <div  className={"flex items-center justify-center gap-2"}>

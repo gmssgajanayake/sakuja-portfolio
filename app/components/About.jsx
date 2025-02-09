@@ -31,9 +31,9 @@ const About = () => {
             />
 
             <div id="about" className="xl:h-screen xl:gap-8 py-10 flex flex-col items-center">
-                <div data-aos="zoom-in" className="flex justify-center items-center flex-col">
-                    <p className="text-lg font-medium text-gray-500">Get to Know More</p>
-                    <h2 className="text-4xl p-2 font-extrabold">About Me</h2>
+                <div  className="flex justify-center items-center flex-col">
+                    <p  data-aos="fade-right" className="text-lg font-medium text-gray-500">Get to Know More</p>
+                    <h2  data-aos="fade-left" className="text-4xl p-2 font-extrabold">About Me</h2>
                 </div>
                 <div className="flex w-screen flex-col xl:flex-row justify-center items-center gap-8 px-8 lg:px-20 xl:px-36">
                     <Image  data-aos="fade-right"

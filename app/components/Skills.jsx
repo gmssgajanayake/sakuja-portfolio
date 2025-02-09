@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { assets, items } from "@/assets/assets";
 import { FiGithub } from "react-icons/fi";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 
 const CountDown = ({ start, end, duration }) => {
@@ -165,8 +166,8 @@ const Skills = () => {
     return (
         <div id="skills" className="w-screen  gap-4 xl:gap-8 py-10 flex flex-col items-center">
             <div data-aos="zoom-in"  className="flex flex-col justify-center items-center">
-                <p className="text-lg font-medium text-gray-500">Explore My</p>
-                <h2 className="text-4xl p-2 font-extrabold">Tech Skills</h2>
+                <p data-aos="fade-right" className="text-lg font-medium text-gray-500">Explore My</p>
+                <h2 data-aos="fade-left" className="text-4xl p-2 font-extrabold">Tech Skills</h2>
             </div>
 
             <div className="flex flex-col w-screen justify-center items-center gap-2 px-8 lg:px-20 xl:px-36">
@@ -176,38 +177,48 @@ const Skills = () => {
                         <button
                             key={`filters-${idx}`}
                             onClick={() => handleFilterButtonClick(filter)}
-                            className={`bg-gray-100 border-[1px] font-normal text-[12px] px-4 py-1 rounded-full border-gray-700 ${
-                                selectedFilter === filter ? "active" : ""
-                            }`}
+                            className={`
+      bg-gray-100 border border-gray-700 font-normal text-[12px] 
+      px-4 py-1 rounded-full transition-colors duration-300
+      ${selectedFilter === filter ? "bg-gray-800 text-white" : "hover:bg-gray-200"}
+    `}
                         >
                             {filter}
                         </button>
                     ))}
                 </div>
 
-                {/* Triangular Grid of Items */}
                 <div className="flex flex-col gap-4 p-4">
-                    {groupedItems.map((rowItems, rowIndex) => (
-                        <div data-aos="zoom-out-up" key={`row-${rowIndex}`} className="flex justify-center gap-4">
-                            {rowItems.map((item, idx) => (
-                                <div key={`item-${idx}`} className="w-24 h-28 gap-2 flex flex-col justify-center items-center">
-                                    <div
-                                        className={`w-20 h-20 flex flex-col items-center justify-center shadow-md 
-                      ${item.name === "Bash" ? "bg-black text-white" : "bg-white"} 
-                      rounded-2xl`}
-                                        style={
-                                            item.name === "Bash"
-                                                ? { clipPath: "polygon(50% 0, 0 100%, 100% 100%)" }
-                                                : {}
-                                        }
-                                    >
-                                        <Image src={item.image} alt={item.name} width={48} height={48} />
+                    <AnimatePresence exitBeforeEnter>
+                        {groupedItems.map((rowItems, rowIndex) => (
+                            <motion.div
+                                key={`row-${rowIndex}`}
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -10 }}
+                                transition={{ duration: 0.3 }}
+                                className="flex justify-center gap-4"
+                            >
+                                {rowItems.map((item, idx) => (
+                                    <div data-aos="zoom-in-up" key={`item-${idx}`} className="w-24 h-28 gap-2 flex flex-col justify-center items-center">
+                                        <div
+                                            className={`w-20 h-20 flex flex-col items-center justify-center shadow-md 
+                ${item.name === "Bash" ? "bg-black text-white" : "bg-white"} 
+                rounded-2xl`}
+                                            style={
+                                                item.name === "Bash"
+                                                    ? { clipPath: "polygon(50% 0, 0 100%, 100% 100%)" }
+                                                    : {}
+                                            }
+                                        >
+                                            <Image src={item.image} alt={item.name} width={48} height={48} />
+                                        </div>
+                                        <p className="text-black text-sm">{item.name}</p>
                                     </div>
-                                    <p className="text-black text-sm">{item.name}</p>
-                                </div>
-                            ))}
-                        </div>
-                    ))}
+                                ))}
+                            </motion.div>
+                        ))}
+                    </AnimatePresence>
                 </div>
             </div>
 
