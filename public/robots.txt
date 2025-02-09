@@ -1,3 +1,9 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://sakuja.me
+
+# Sitemaps
 Sitemap: https://sakuja.me/sitemap.xml
