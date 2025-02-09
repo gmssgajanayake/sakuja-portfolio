@@ -2,6 +2,7 @@ import {Rubik, Italianno, Roboto} from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import "aos/dist/aos.css";
+import Head from "next/head";
 
 const rubik = Rubik({
     subsets: ["latin"],
@@ -63,7 +64,11 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en" className={"scroll-smooth"}>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+        <Head>
+            <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+            <meta property="og:site_name" content="Sakuja Shamal" />
+            <meta property="og:title" content="Sakuja Shamal" />
+        </Head>
         <body
             className={`${italianno.className} ${rubik.className} ${roboto.className} antialiased `}
         >
@@ -90,15 +95,18 @@ export default function RootLayout({children}) {
             {JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "Person",
-                name: "Sakuja Shamal",
-                url: "https://sakuja.me",
-                alumniOf: {
+                "image": "https://sakuja.me/favicon.ico", // Consider using a personal headshot or a proper image
+                "name": "Sakuja Shamal",
+                "url": "https://sakuja.me",
+                "alumniOf": {
                     "@type": "CollegeOrUniversity",
-                    name: "University of Jaffna",
+                    "name": "University of Jaffna"
                 },
-                knowsAbout: ["Computer Science", "Statistics", "Pure Maths"],
+                "knowsAbout": ["Computer Science", "Statistics", "Pure Maths"]
             })}
         </Script>
+
+
         <Script src="https://kit.fontawesome.com/f597464952.js" crossOrigin="anonymous"></Script>
         <div>
             {children}
