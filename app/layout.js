@@ -4,6 +4,7 @@ import Script from "next/script";
 import "aos/dist/aos.css";
 import Head from "next/head";
 
+
 const rubik = Rubik({
     subsets: ["latin"],
     weight: ["300", "400", "500"],
@@ -64,12 +65,16 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en" className={"scroll-smooth"}>
-        <head>
-            <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-            <meta property="og:site_name" content="Sakuja Shamal" />
-            <meta property="og:title" content="Sakuja Shamal" />
+        <Head>
+            <link rel="icon" href="/favicon.ico"/>
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+            <link rel="manifest" href="/site.webmanifest"/>
+            <meta property="og:site_name" content="Sakuja Shamal"/>
+            <meta property="og:title" content="Sakuja Shamal"/>
             <title>Sakuja Shamal Gajanayake</title>
-        </head>
+        </Head>
         <body
             className={`${italianno.className} ${rubik.className} ${roboto.className} antialiased `}
         >
@@ -106,8 +111,6 @@ export default function RootLayout({children}) {
                 "knowsAbout": ["Computer Science", "Statistics", "Pure Maths"]
             })}
         </Script>
-
-
         <Script src="https://kit.fontawesome.com/f597464952.js" crossOrigin="anonymous"></Script>
         <div>
             {children}
