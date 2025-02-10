@@ -65,11 +65,10 @@ export default function RootLayout({children}) {
     return (
         <html lang="en" className={"scroll-smooth"}>
         <head>
-            <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-            <title>Sakuja Shamal</title>
             <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
             <meta property="og:site_name" content="Sakuja Shamal" />
             <meta property="og:title" content="Sakuja Shamal" />
+            <title>Sakuja Shamal Gajanayake</title>
         </head>
         <body
             className={`${italianno.className} ${rubik.className} ${roboto.className} antialiased `}
