@@ -175,12 +175,13 @@ export const items = [
         category: "DevOps",
         image: docker
 
-    }, {
-        name: "Kubernetes",
-        category: "DevOps",
-        image: kubernetes
-
-    }
+     }
+    //{
+    //     name: "Kubernetes",
+    //     category: "DevOps",
+    //     image: kubernetes
+    //
+    // }
     , {
         name: "Apache",
         category: "DevOps",
