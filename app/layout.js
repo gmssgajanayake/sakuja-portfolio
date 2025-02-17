@@ -22,36 +22,37 @@ const roboto = Roboto({
 
 export const metadata = {
     title: 'Sakuja Shamal Gajanayake',
-    description: 'Portfolio of Sakuja Shamal | BSc in Computer Science, Statistics & Maths student at University of Jaffna. Explore projects, academic work, and achievements.',
+    description:
+        'Portfolio of Sakuja Shamal | BSc in Computer Science, Statistics & Maths student at University of Jaffna. Explore projects, academic work, and achievements.',
     keywords: [
-        "Sakuja",
-        "Sakuja Shamal",
-        "Sakuja Shamal Gajanayake",
-        "Portfolio",
-        "Computer Science",
-        "Statistics",
-        "Pure Maths",
-        "University of Jaffna",
-        "Sakuja Gajanayake",
+        'Sakuja',
+        'Sakuja Shamal',
+        'Sakuja Shamal Gajanayake',
+        'Portfolio',
+        'Computer Science',
+        'Statistics',
+        'Pure Maths',
+        'University of Jaffna',
+        'Sakuja Gajanayake',
         'Sri Lanka Software Developer'
     ],
     openGraph: {
-        title: "Sakuja Shamal",
+        title: 'Sakuja Shamal',
         description:
-            "Explore the portfolio of Sakuja Shamal, showcasing projects and academic achievements.",
-        url: "https://sakuja.me",
-        siteName: "Sakuja Shamal",
-        locale: "en_US",
-        type: "website",
+            'Explore the portfolio of Sakuja Shamal, showcasing projects and academic achievements.',
+        url: 'https://sakuja.me',
+        siteName: 'Sakuja Shamal',
+        locale: 'en_US',
+        type: 'website'
     },
     twitter: {
-        card: "summary_large_image",
-        title: "Sakuja Shamal Gajanayake",
+        card: 'summary_large_image',
+        title: 'Sakuja Shamal Gajanayake',
         description:
-            "Explore the portfolio of Sakuja Shamal, an undergraduate student at the University of Jaffna.",
+            'Explore the portfolio of Sakuja Shamal, an undergraduate student at the University of Jaffna.'
     },
     alternates: {
-        canonical: "https://sakuja.me",
+        canonical: 'https://sakuja.me'
     },
     additionalMetaTags: [
         {
@@ -61,6 +62,7 @@ export const metadata = {
         }
     ]
 };
+
 
 export default function RootLayout({children}) {
     return (
