@@ -1,4 +1,4 @@
-import sakuja_shamal from './sakuja_shamal.jpg';
+import sakuja_shamal from './sakuja_shamal.png';
 import sakuja_shamal_about_me from './Photoroom_20250206_203509.jpg';
 import uoj_loj from './UoJ_logo.png';
 import ijse_loj from './ijse.png';

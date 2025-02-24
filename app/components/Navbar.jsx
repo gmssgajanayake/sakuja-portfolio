@@ -75,10 +75,10 @@ const Navbar = () => {
         <>
             <nav
                 className={`
-           bg-white backdrop-blur-md w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50
+            backdrop-blur-md w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50
           xl:shadow-xl transition-transform duration-500
           ${showNav ? 'translate-y-0' : '-translate-y-full'}
-          ${isTop ? 'bg-white' : 'bg-white/10 '}
+          ${isTop ? 'bg-gray-100 xl:shadow-none' : 'bg-white/10 '}
         `}
             >
                 {/* Logo */}

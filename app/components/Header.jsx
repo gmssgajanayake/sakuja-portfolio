@@ -29,27 +29,29 @@ const Header = () => {
     return (
         <div
             id="profile"
-            className="xl:h-screen xl:pt-40 xl:flex-row flex flex-col justify-center items-center"
+            className="xl:h-screen xl:pt-40 xl:flex-row flex flex-col justify-center items-center bg-gray-100"
         >
             {/* Image Section */}
             <div
-            data-aos="zoom-in-right"
+                data-aos="zoom-in-right"
                 className="flex justify-center xl:justify-end items-center xl:w-3/4 w-screen xl:h-screen xl:pt-10 pt-36"
             >
                 <Image
                     src={assets.sakuja_shamal}
                     alt="Sakuja Shamal Gajanayake"
-                    className="rounded-full w-[240px] h-[240px] xl:w-[360px] xl:h-[360px] p-2 hover:border-dashed hover:border-2 border-slate-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+                    className="rounded-full w-[240px] h-[240px] xl:w-[360px] xl:h-[360px] p-2 border-slate-500 transition delay-150 duration-300 ease-in-out hover:border-dashed hover:border-2 hover:-translate-y-1 hover:scale-110"
                 />
             </div>
 
             {/* Description Section */}
-            <div data-aos="fade-down-left" className="flex xl:justify-start justify-center items-center w-screen xl:h-screen py-10 px-4">
+            <div data-aos="fade-down-left"
+                 className="flex xl:justify-start justify-center items-center w-screen xl:h-screen py-10 px-4">
                 <div className="xl:ml-4 flex justify-center items-center flex-col gap-4">
-                    <p data-aos="zoom-in-left" className="text-center font-Rubik font-medium text-gray-600 text-xl">
+                    <p data-aos="zoom-in-left" className="text-center font-Rubik font-medium text-gray-00 text-xl">
                         Hello I'm
                     </p>
-                    <h1 data-aos="zoom-in-left" className="text-center  w-80 md:w-96 text-kaushan-script-regular text-4xl md:text-5xl kaushan-script-regular text-gray-800">
+                    <h1 data-aos="zoom-in-left"
+                        className="text-center  w-80 md:w-96 text-kaushan-script-regular text-4xl md:text-5xl kaushan-script-regular text-gray-800">
                         Sakuja Shamal
                     </h1>
                     <div className="flex flex-col items-center justify-center">
@@ -85,39 +87,41 @@ const Header = () => {
 
                     {/* Buttons */}
                     <div className="flex items-center justify-center gap-2">
-                        <button data-aos="zoom-in-left" className="transition delay-150 duration-300 ease-in-out hover:text-white hover:bg-black border-2 border-gray-800 rounded-full px-5 py-3 text-[12px] font-bold">
+                        <button data-aos="zoom-in-left"
+                                className="transition delay-150 duration-300 ease-in-out bg-[#DBD1FB]  border-2 border-[#DBD1FB] text-[#231057] rounded-full px-5 py-3 text-[12px] font-bold">
                             Download CV
                         </button>
-                        <button data-aos="zoom-in-left" className="text-white bg-black border-2 border-gray-800 rounded-full px-5 py-3 text-[12px] font-bold">
+                        <button data-aos="zoom-in-left"
+                                className="text-white bg-[#231057] border-2 border-[#231057] rounded-full px-5 py-3 text-[12px] font-bold">
                             Contact Info
                         </button>
                     </div>
 
                     {/* Social Media Links */}
-                    <div className="bg-white w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">
+                    <div className=" w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">
                         <Link data-aos="zoom-in-left"
-                            href="https://github.com/gmssgajanayake"
-                            className="p-3 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
+                              href="https://github.com/gmssgajanayake"
+                              className="p-3 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
                         >
-                            <RiGithubFill className="text-2xl" />
+                            <RiGithubFill className="text-2xl"/>
                         </Link>
                         <Link data-aos="zoom-in-left"
-                            href="https://www.linkedin.com/in/sakuja-shamal-gajanayake-a15b41347/"
-                            className="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
+                              href="https://www.linkedin.com/in/sakuja-shamal-gajanayake-a15b41347/"
+                              className="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
                         >
-                            <TiSocialLinkedin className="text-3xl" />
+                            <TiSocialLinkedin className="text-3xl"/>
                         </Link>
                         <Link data-aos="zoom-in-left"
-                            href="https://x.com/sakuja_shamal"
-                            className="p-4 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
+                              href="https://x.com/sakuja_shamal"
+                              className="p-4 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
                         >
-                            <BsTwitterX className="text-1xl" />
+                            <BsTwitterX className="text-1xl"/>
                         </Link>
                         <Link data-aos="zoom-in-left"
-                            href="https://api.whatsapp.com/send/?phone=94717978125"
-                            className="p-3 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
+                              href="https://api.whatsapp.com/send/?phone=94717978125"
+                              className="p-3 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
                         >
-                            <FaWhatsapp className="text-2xl" />
+                            <FaWhatsapp className="text-2xl"/>
                         </Link>
                     </div>
                 </div>

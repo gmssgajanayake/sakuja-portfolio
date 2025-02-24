@@ -164,7 +164,7 @@ const Skills = () => {
     };
 
     return (
-        <div id="skills" className="w-screen  gap-4 xl:gap-8 py-10 flex flex-col items-center">
+        <div id="skills" className="w-screen bg-gray-100 gap-4 xl:gap-8 pt-10 py-10 flex flex-col items-center">
             <div data-aos="zoom-in"  className="flex flex-col justify-center items-center">
                 <p data-aos="fade-right" className="text-lg font-medium text-gray-500">Explore My</p>
                 <h2 data-aos="fade-left" className="text-4xl p-2 font-extrabold">Tech Skills</h2>

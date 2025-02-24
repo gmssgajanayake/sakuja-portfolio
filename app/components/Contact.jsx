@@ -8,7 +8,7 @@ import {AiOutlineYoutube} from "react-icons/ai";
 
 const Contact = () => {
     return (
-        <div id={"contact"} className={" xl:h-screen  xl:gap-8 xl:pt-10 flex flex-col items-center justify-between "}>
+        <div id={"contact"} className={" xl:h-screen  xl:gap-8 pt-20 xl:pt-0 flex flex-col items-center justify-between "}>
             <div className={"flex justify-center   items-center h-1/2 flex-col"}>
                 <p data-aos="fade-right" className={"text-lg  font-medium text-gray-500"}>Get in Touch</p>
                 <h2 data-aos="fade-left" className={"text-4xl p-2 font-extrabold"}>Contact Me</h2>
