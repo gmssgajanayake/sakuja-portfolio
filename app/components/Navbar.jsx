@@ -76,9 +76,9 @@ const Navbar = () => {
             <nav
                 className={`
             backdrop-blur-md w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50
-          xl:shadow-xl transition-transform duration-500
+           transition-transform duration-500
           ${showNav ? 'translate-y-0' : '-translate-y-full'}
-          ${isTop ? 'bg-gray-100 xl:shadow-sm' : 'bg-white/10 '}
+          ${isTop ? 'bg-gray-100 ' : 'bg-white/10 xl:shadow-xl'}
         `}
             >
                 {/* Logo */}
