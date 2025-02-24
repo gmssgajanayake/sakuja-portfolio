@@ -124,7 +124,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu Overlay */}
                 {isMenuOpen && (
-                    <div className="fixed inset-0 bg-black/50 z-40" aria-hidden="true" />
+                    <div className="fixed inset-0 h-screen bg-gray-800/50 z-40" aria-hidden="true" />
                 )}
 
                 {/* Mobile Menu */}
