@@ -39,7 +39,7 @@ const Header = () => {
                 <Image
                     src={assets.sakuja_shamal}
                     alt="Sakuja Shamal Gajanayake"
-                    className="rounded-full w-[240px] h-[240px] xl:w-[360px] xl:h-[360px] p-2 border-slate-500 transition delay-150 duration-300 ease-in-out hover:border-dashed hover:border-2 hover:-translate-y-1 hover:scale-110"
+                    className="rounded-full w-[240px] h-[240px] xl:w-[360px] xl:h-[360px] p-2 border-slate-500 transition delay-150 duration-300 ease-in-out border-dashed border-2 hover:-translate-y-1 hover:scale-110"
                 />
             </div>
 
@@ -88,11 +88,11 @@ const Header = () => {
                     {/* Buttons */}
                     <div className="flex items-center justify-center gap-2">
                         <button data-aos="zoom-in-left"
-                                className="transition delay-150 duration-300 ease-in-out bg-[#DBD1FB]  border-2 border-[#DBD1FB] text-[#231057] rounded-full px-5 py-3 text-[12px] font-bold">
+                                className="transition delay-150 duration-300 ease-in-out bg-gray-200  border-2 border-gray-200 text-gray-800 rounded-full px-5 py-3 text-[12px] font-bold">
                             Download CV
                         </button>
                         <button data-aos="zoom-in-left"
-                                className="text-white bg-[#231057] border-2 border-[#231057] rounded-full px-5 py-3 text-[12px] font-bold">
+                                className="text-white bg-gray-800 border-2 border-gray-800 rounded-full px-5 py-3 text-[12px] font-bold">
                             Contact Info
                         </button>
                     </div>
